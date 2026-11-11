@@ -1,0 +1,6 @@
+{
+  "name": "Credit Risk & Loan Default Prediction (Python ML Project)",
+  "description": "College Python project predicting retail loan probability of default using Multiple Logistic Regression on LendingClub data, featuring Python scripts, Jupyter notebook, live applicant scorer, econometrics tables, and defense Q&A.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

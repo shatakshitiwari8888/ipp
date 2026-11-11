@@ -1,0 +1,7 @@
+feature,beta,odds_ratio,interpretation
+(Intercept),0.0034,1.0034,Baseline centered log-odds under balanced weighting
+annual_inc,-0.2225,0.8005,Higher income reduces default odds by buffering debt service capacity
+dti,0.3425,1.4084,Higher Debt-to-Income elevates default odds by straining monthly cash flows
+fico_range_low,-0.4484,0.6386,Strongest protective factor; higher credit scores substantially cut default risk
+loan_amnt,0.0903,1.0945,Larger loan sizes increase amortization debt burden
+LTI,0.3568,1.4288,Elevated Loan-to-Income leverage sharply increases credit risk

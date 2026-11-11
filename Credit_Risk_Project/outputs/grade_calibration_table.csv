@@ -1,0 +1,7 @@
+grade,cutoff,name,applicant_count,portfolio_share_pct,avg_model_pd,observed_default_rate
+A,< 0.32,Prime / Lowest Risk,158,17.7,0.2432,0.2722
+B,< 0.44,Near Prime,189,21.1,0.384,0.3492
+C,< 0.54,Moderate Risk,194,21.7,0.4937,0.4948
+D,< 0.64,Elevated Risk,154,17.2,0.5873,0.5909
+E,< 0.74,Subprime Risk,119,13.3,0.6913,0.7227
+F,>= 0.74,Severe / Speculative,80,8.9,0.8101,0.7375
