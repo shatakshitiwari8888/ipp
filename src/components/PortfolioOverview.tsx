@@ -37,7 +37,7 @@ Dataset Period,2007-2018 Q4,Historical Resolved
           <div className="max-w-3xl">
             <div className="flex items-center space-x-2 text-xs font-semibold text-[#706E66] uppercase tracking-wider mb-2">
               <ShieldCheck className="w-4 h-4 text-[#0C2340]" />
-              <span>Section A · Executive Portfolio Governance</span>
+              <span>Executive Portfolio Dashboard</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold text-[#1C1B18] tracking-tight">
               Portfolio Overview & Debt Resolution Analysis

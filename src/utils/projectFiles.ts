@@ -1,4 +1,13 @@
 import JSZip from 'jszip';
+import STREAMLIT_PROJECT_PY_RAW from '../../Credit_Risk_Project/project.py?raw';
+import README_MD_RAW from '../../Credit_Risk_Project/README.md?raw';
+import NOTEBOOK_RAW from '../../Credit_Risk_Project/notebooks/credit_risk_analysis.ipynb?raw';
+import METADATA_JSON_RAW from '../../Credit_Risk_Project/models/model_metadata.json?raw';
+
+export const STREAMLIT_PROJECT_PY_CODE = STREAMLIT_PROJECT_PY_RAW;
+export const README_MD_TEXT = README_MD_RAW;
+export const NOTEBOOK_JSON_TEXT = NOTEBOOK_RAW;
+export const MODEL_METADATA_JSON_TEXT = METADATA_JSON_RAW;
 
 export const REQUIREMENTS_TXT = `# Credit Risk and Loan Default Prediction
 # Course: Introduction to Python Programming
@@ -279,46 +288,10 @@ export async function downloadProjectZip() {
   // Root files
   zip.file('requirements.txt', REQUIREMENTS_TXT);
   zip.file('credit_risk.py', CREDIT_RISK_PY_CODE);
-  
-  try {
-    const projRes = await fetch('/project.py');
-    if (projRes.ok) {
-      const projText = await projRes.text();
-      zip.file('project.py', projText);
-    }
-  } catch {
-    // fallback
-  }
-
-  try {
-    const nbRes = await fetch('/credit_risk_analysis.ipynb');
-    if (nbRes.ok) {
-      const nbText = await nbRes.text();
-      zip.folder('notebooks')?.file('credit_risk_analysis.ipynb', nbText);
-    }
-  } catch {
-    // fallback
-  }
-
-  try {
-    const metaRes = await fetch('/model_metadata.json');
-    if (metaRes.ok) {
-      const metaText = await metaRes.text();
-      zip.folder('models')?.file('model_metadata.json', metaText);
-    }
-  } catch {
-    // fallback
-  }
-
-  try {
-    const readmeRes = await fetch('/README.md');
-    if (readmeRes.ok) {
-      const rmText = await readmeRes.text();
-      zip.file('README.md', rmText);
-    }
-  } catch {
-    // fallback
-  }
+  zip.file('project.py', STREAMLIT_PROJECT_PY_CODE);
+  zip.file('README.md', README_MD_TEXT);
+  zip.folder('notebooks')?.file('credit_risk_analysis.ipynb', NOTEBOOK_JSON_TEXT);
+  zip.folder('models')?.file('model_metadata.json', MODEL_METADATA_JSON_TEXT);
 
   // Outputs folder
   const coefCsv = `feature,beta,odds_ratio,interpretation

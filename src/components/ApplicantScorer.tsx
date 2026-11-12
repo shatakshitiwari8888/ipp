@@ -90,7 +90,7 @@ export const ApplicantScorer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 text-xs font-semibold text-[#706E66] uppercase tracking-wider mb-2">
               <Binary className="w-4 h-4 text-[#0C2340]" />
-              <span>Section D · Underwriting Decision Engine</span>
+              <span>Borrower Risk Assessment & Underwriting</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold text-[#1C1B18] tracking-tight">
               Retail Loan Applicant Risk Scorer

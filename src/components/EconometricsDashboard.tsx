@@ -26,7 +26,7 @@ export const EconometricsDashboard: React.FC = () => {
         <div className="max-w-3xl">
           <div className="flex items-center space-x-2 text-xs font-semibold text-[#706E66] uppercase tracking-wider mb-2">
             <TrendingUp className="w-4 h-4 text-[#0C2340]" />
-            <span>Section C · Statistical Inference & Econometrics</span>
+            <span>Model Performance & Statistical Inference</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-bold text-[#1C1B18] tracking-tight">
             Multiple Logistic Regression & Credit Calibration
